@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parko</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+	<script src="js/xml2json.js"></script>
+	<script src="js/app.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZSFEpLbMp6sQ2Zcwn_3rYBdYlHexGmz0&callback=initMap"></script>
+</head>
+
+<body>
+	<div id="menu">
+		<form class="form">
+			<div>Only show places:<br /><br /></div>
+			<div>
+				<input type="checkbox" name="Free" value="Free" id="Free" checked class="form-check-input">
+				<label for="Free" class="form-check-label">Free</label>
+			</div>
+			<div>
+				<input type="checkbox" name="Occupied" value="Occupied" id="Occupied" checked class="form-check-input">
+				<label for="Occupied" class="form-check-label">Occupied</label>
+			</div>
+			<div>
+				<input type="checkbox" name="Unknown" value="Unknown" id="Unknown" checked class="form-check-input">
+				<label for="Unknown" class="form-check-label">Unknown</label>
+			</div>
+		</form>
+	</div>
+	<div id="map">
+
+	</div>
+</body>
+
+</html>
